@@ -219,6 +219,10 @@ li {
     flex-wrap: wrap;
 }
 
+#section_0 {
+    background-image: url("../img/jumbo.png");
+}
+
 #section_0 > .container {
     max-width: 600px;
     margin: auto;
