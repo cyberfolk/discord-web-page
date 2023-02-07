@@ -25,7 +25,7 @@
     --logo-height: 30px;
     --btn-login-bg: #FFFFFF;
     --btn-sign_in-bg: #7983F5;
-    --h3: #7188d9;
+    --title-footer: #7188d9;
 }
 
 body {
@@ -57,7 +57,13 @@ h3 {
     margin-bottom: 2rem;
 }
 
+h4 {
+    font-size: 0.8rem;
+    color: var(--title-footer);
+}
+
 li {
+    font-size: 0.8rem;
     list-style-type: none;
     line-height: 1.5rem;
 }
@@ -216,6 +222,11 @@ img {
     padding-bottom: 5rem;
 }
 
+.py-4 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
 .pt-05 {
     padding-top: 0.5rem;
 }
@@ -252,7 +263,6 @@ img {
     padding-left: 3rem;
 }
 
-
 .pr-3 {
     padding-right: 3rem;
 }
@@ -260,6 +270,10 @@ img {
 .my-1 {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.mr-1 {
+    margin-right: 1rem;
 }
 
 .mx-1 {
@@ -366,7 +380,16 @@ img {
 /* #endregion app-main */
 
 /* #region app-footer */
+#footer_top h3 {
+    color: var(--title-footer);
+}
+
+#footer_top span {
+    color: white;
+}
+
 #footer_bottom > .container {
+    border-top: solid 1px var(--title-footer);
     justify-content: space-between;
 }
 
