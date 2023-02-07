@@ -21,8 +21,8 @@
     --footer_bottom-container: #7FFFD4;
     --footer_bottom-element: #FFB6C1;
     --height-tmp: 400px;
-    --logo-width: 200px;
-    --logo-height: 30px;
+    --logo-width: 190px;
+    --logo-height: 50px;
     --btn-login-bg: #FFFFFF;
     --btn-sign_in-bg: #7983F5;
 }
@@ -132,7 +132,7 @@ h1 {
 }
 
 .logo {
-    background-image: url("https://picsum.photos/200/30");
+    background-image: url("../img/logo.svg");
     height: var(--logo-height);
     width: var(--logo-width);
     background-size: cover;
