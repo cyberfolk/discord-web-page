@@ -275,6 +275,12 @@ p {
     color: white;
 }
 
+#section_0 button {
+    font-size: 1rem;
+    border-radius: 2.2rem;
+    margin: 0 0.5rem;
+}
+
 /* #endregion app-header */
 
 /* #region app-main */
