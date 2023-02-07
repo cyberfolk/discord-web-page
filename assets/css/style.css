@@ -6,7 +6,7 @@
 }
 
 :root {
-    --header_top-bg: #ADD8E6;
+    --header_top-bg: #255EE9;
     --header_top-container: #DAA520;
     --header_bottom-bg: #00008B;
     --header_bottom-container: #EE82EE;
@@ -22,7 +22,7 @@
     --footer_bottom-element: #FFB6C1;
     --height-tmp: 600px;
     --logo-width: 190px;
-    --logo-height: 50px;
+    --logo-height: 30px;
     --btn-login-bg: #FFFFFF;
     --btn-sign_in-bg: #7983F5;
     --h3: #7188d9;
@@ -34,10 +34,8 @@ body {
 
 button {
     border: none;
-    font-size: 1.1rem;
     border-radius: 2.2rem;
     padding: 0.5rem 1rem;
-    margin: 0.5rem;
 }
 
 a {
@@ -66,7 +64,7 @@ p {
 /* #endregion Common Rules */
 
 /* #region Debug */
-.debug #app-header {
+/*.debug #app-header {
     background-color: var(--header_top-bg);
 }
 
@@ -78,7 +76,7 @@ p {
     border: 1px black dashed;
 }
 
-/* .debug #section_0 {
+.debug #section_0 {
     background-color: var(--header_bottom-bg);
 }
 
@@ -86,8 +84,9 @@ p {
     background-color: var(--header_bottom-container);
     height: var(--height-tmp);
     border: 1px black dashed;
-} */
+}
 
+*/
 .debug #section_1, #section_3 {
     background-color: var(--section-white-bg);
 }
@@ -150,8 +149,8 @@ p {
 .logo {
     background-image: url("../img/logo.svg");
     height: var(--logo-height);
-    width: var(--logo-width);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .flex {
@@ -218,6 +217,10 @@ p {
 /* #endregion Utilities */
 
 /* #region app-header */
+
+#app-header {
+    background-color: var(--header_top-bg);
+}
 
 #app-header .links {
     text-align: center;
