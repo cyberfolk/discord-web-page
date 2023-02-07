@@ -6,7 +6,7 @@
 }
 
 :root {
-    --header_top-bg: #255EE9;
+    --app-header-bg: #255EE9;
     --header_top-container: #DAA520;
     --header_bottom-bg: #00008B;
     --header_bottom-container: #EE82EE;
@@ -15,7 +15,7 @@
     --section-big-container: #1E90FF;
     --section-small-container: #FFC0CB;
     --section-only-container: #228B22;
-    --footer-bg: #23272A;
+    --app-footer-bg: #23272A;
     --footer_top-col_4-container: #F08080;
     --footer_top-col_2-container: #20B2AA;
     --footer_bottom-container: #7FFFD4;
@@ -24,7 +24,7 @@
     --logo-width: 190px;
     --logo-height: 30px;
     --btn-login-bg: #FFFFFF;
-    --btn-sign_in-bg: #7983F5;
+    --btn-blue-bg: #7983F5;
     --title-footer: #7188d9;
 }
 
@@ -81,7 +81,7 @@ img {
 
 /* #region Debug */
 .debug #app-header {
-    background-color: var(--header_top-bg);
+    background-color: var(--app-header-bg);
 }
 
 .debug #app-header > .container {
@@ -129,7 +129,7 @@ img {
 
 
 .debug #app-footer {
-    background-color: var(--footer-bg);
+    background-color: var(--app-footer-bg);
 }
 
 .debug #footer_top .col-4 {
@@ -254,6 +254,14 @@ img {
     margin-right: 1rem;
 }
 
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
 .col-8 {
     width: calc((100% / 12) * 8);
 }
@@ -281,13 +289,12 @@ img {
 /* #region app-header */
 
 #app-header {
-    background-color: var(--header_top-bg);
+    background-color: var(--app-header-bg);
 }
 
 #app-header .container {
     align-items: center;
 }
-
 
 #app-header .links {
     text-align: center;
@@ -300,6 +307,10 @@ img {
     font-size: 0.8rem;
 }
 
+/* #endregion app-header */
+
+/* #region app-main */
+
 #section_0 {
     background-image: url("../img/jumbo.png");
     background-size: cover;
@@ -311,17 +322,12 @@ img {
     text-align: center;
 }
 
-#section_0 #open_in_browser {
+#section_0 #btn_open_in_browser {
     background-color: #24242c;
     color: white;
 }
 
-#section_0 p {
-    color: white;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
+#section_0 p,
 #section_0 h1 {
     color: white;
 }
@@ -336,11 +342,14 @@ img {
     background-color: var(--section-grey-bg);
 }
 
-/* #endregion app-header */
-
-/* #region app-main */
 #section_4 > .container {
     text-align: center;
+}
+
+#section_4 .btn_download {
+    color: white;
+    background-color: var(--btn-blue-bg);
+    font-size: 1rem;
 }
 
 /* #endregion app-main */
@@ -348,7 +357,7 @@ img {
 /* #region app-footer */
 
 #app-footer {
-    background-color: var(--footer-bg);
+    background-color: var(--app-footer-bg);
 }
 
 #footer_top h3 {
@@ -359,17 +368,15 @@ img {
     color: white;
 }
 
+
 #footer_bottom > .container {
     border-top: solid 1px var(--title-footer);
     align-items: flex-start;
-}
-
-#footer_bottom > .container {
     justify-content: space-between;
 }
 
-button#sign_in {
-    background-color: var(--btn-sign_in-bg);
+#footer_bottom #btn_sign_in {
+    background-color: var(--btn-blue-bg);
     color: white;
 }
 
