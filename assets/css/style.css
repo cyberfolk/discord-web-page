@@ -34,8 +34,10 @@ body {
 
 button {
     border: none;
-    border-radius: 1rem;
+    font-size: 1.1rem;
+    border-radius: 2.2rem;
     padding: 0.5rem 1rem;
+    margin: 0.5rem;
 }
 
 a {
@@ -44,7 +46,7 @@ a {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.8rem;
     margin: 1rem 0;
 }
 
@@ -54,6 +56,10 @@ h3 {
 
 li {
     list-style-type: none;
+    line-height: 1.5rem;
+}
+
+p {
     line-height: 1.5rem;
 }
 
@@ -72,7 +78,7 @@ li {
     border: 1px black dashed;
 }
 
-.debug #section_0 {
+/* .debug #section_0 {
     background-color: var(--header_bottom-bg);
 }
 
@@ -80,7 +86,7 @@ li {
     background-color: var(--header_bottom-container);
     height: var(--height-tmp);
     border: 1px black dashed;
-}
+} */
 
 .debug #section_1, #section_3 {
     background-color: var(--section-white-bg);
@@ -236,6 +242,8 @@ li {
 
 #section_0 p {
     color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 #section_0 h1 {
