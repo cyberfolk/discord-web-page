@@ -20,11 +20,12 @@
     --footer_top-col_2-container: #20B2AA;
     --footer_bottom-container: #7FFFD4;
     --footer_bottom-element: #FFB6C1;
-    --height-tmp: 400px;
+    --height-tmp: 600px;
     --logo-width: 190px;
     --logo-height: 50px;
     --btn-login-bg: #FFFFFF;
     --btn-sign_in-bg: #7983F5;
+    --h3: #7188d9;
 }
 
 body {
@@ -45,6 +46,15 @@ a {
 h1 {
     font-size: 2rem;
     margin: 1rem 0;
+}
+
+h3 {
+    color: var(--h3);
+}
+
+li {
+    list-style-type: none;
+    line-height: 1.5rem;
 }
 
 /* #endregion Common Rules */
