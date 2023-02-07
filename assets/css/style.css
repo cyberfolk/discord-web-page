@@ -149,6 +149,7 @@ p {
 .logo {
     background-image: url("../img/logo.svg");
     height: var(--logo-height);
+    aspect-ratio: 13.62 / 3.84;
     background-size: contain;
     background-repeat: no-repeat;
 }
