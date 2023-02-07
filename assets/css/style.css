@@ -44,11 +44,17 @@ a {
 }
 
 h1 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
 }
 
 h3 {
-    color: var(--h3);
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
 }
 
 li {
@@ -58,6 +64,10 @@ li {
 
 p {
     line-height: 1.5rem;
+}
+
+img {
+    width: 100%;
 }
 
 /* #endregion Common Rules */
@@ -96,19 +106,19 @@ p {
 
 .debug .big_container {
     background-color: var(--section-big-container);
-    height: var(--height-tmp);
+    /* height: var(--height-tmp); */
     border: 1px black dashed;
 }
 
 .debug .small_container {
     background-color: var(--section-small-container);
-    height: var(--height-tmp);
+    /* height: var(--height-tmp); */
     border: 1px black dashed;
 }
 
 .debug #section_4 > .container {
     background-color: var(--section-only-container);
-    height: var(--height-tmp);
+    /* height: var(--height-tmp); */
 }
 
 .debug #app-footer {
@@ -200,6 +210,23 @@ p {
     padding-bottom: 7rem;
 }
 
+.pl-6 {
+    padding-left: 6rem;
+}
+
+.pl-5 {
+    padding-left: 5rem;
+}
+
+.pl-3 {
+    padding-left: 3rem;
+}
+
+
+.pr-3 {
+    padding-right: 3rem;
+}
+
 .my-1 {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -214,12 +241,20 @@ p {
     padding: 0.2rem;
 }
 
+.col-9 {
+    width: calc((100% / 12) * 9);
+}
+
 .col-8 {
     width: calc((100% / 12) * 8);
 }
 
-.col-9 {
-    width: calc((100% / 12) * 9);
+.col-7 {
+    width: calc((100% / 12) * 7);
+}
+
+.col-5 {
+    width: calc((100% / 12) * 5);
 }
 
 .col-4 {
