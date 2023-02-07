@@ -150,6 +150,31 @@ img {
 /* #endregion Debug */
 
 /* #region Utilities */
+
+.wave-container-grey {
+    position: relative;
+    background: var(--section-white-bg);
+    color: var(--section-grey-bg);
+    text-align: center;
+    overflow: hidden;
+}
+
+.wave-container-white {
+    position: relative;
+    background: var(--section-grey-bg);
+    color: var(--section-white-bg);
+    text-align: center;
+    overflow: hidden;
+}
+
+.wave-container-grey > svg {
+    display: block;
+}
+
+.wave-container-white > svg {
+    display: block;
+}
+
 .container {
     width: 70%;
     max-width: 1140px;
