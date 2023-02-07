@@ -60,23 +60,23 @@ li {
 /* #endregion Common Rules */
 
 /* #region Debug */
-.debug #header_top {
+.debug #app-header {
     background-color: var(--header_top-bg);
 }
 
-.debug #header_top > .container {
+.debug #app-header > .container {
     background-color: var(--header_top-container);
 }
 
-.debug #header_top > .container > div {
+.debug #app-header > .container > div {
     border: 1px black dashed;
 }
 
-.debug #header_bottom {
+.debug #section_0 {
     background-color: var(--header_bottom-bg);
 }
 
-.debug #header_bottom > .container {
+.debug #section_0 > .container {
     background-color: var(--header_bottom-container);
     height: var(--height-tmp);
     border: 1px black dashed;
@@ -213,28 +213,28 @@ li {
 
 /* #region app-header */
 
-#header_top .links {
+#app-header .links {
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-#header_bottom > .container {
+#section_0 > .container {
     max-width: 600px;
     margin: auto;
     text-align: center;
 }
 
-#header_bottom #open_in_browser {
+#section_0 #open_in_browser {
     background-color: #24242c;
     color: white;
 }
 
-#header_bottom p {
+#section_0 p {
     color: white;
 }
 
-#header_bottom h1 {
+#section_0 h1 {
     color: white;
 }
 
