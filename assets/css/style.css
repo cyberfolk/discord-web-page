@@ -1,0 +1,250 @@
+/* #region Common Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header_top-bg: #ADD8E6;
+    --header_top-container: #DAA520;
+    --header_bottom-bg: #00008B;
+    --header_bottom-container: #EE82EE;
+    --section-white-bg: #FFFFFF;
+    --section-grey-bg: #D3D3D3;
+    --section-big-container: #1E90FF;
+    --section-small-container: #FFC0CB;
+    --section-only-container: #228B22;
+    --footer-bg: #23272A;
+    --footer_top-col_4-container: #F08080;
+    --footer_top-col_2-container: #20B2AA;
+    --footer_bottom-container: #7FFFD4;
+    --footer_bottom-element: #FFB6C1;
+    --height-tmp: 400px;
+    --logo-width: 200px;
+    --logo-height: 30px;
+    --btn-login-bg: #FFFFFF;
+    --btn-sign_in-bg: #7983F5;
+}
+
+body {
+    font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+button {
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+/* #endregion Common Rules */
+
+/* #region Debug */
+.debug #header_top {
+    background-color: var(--header_top-bg);
+}
+
+.debug #header_top > .container {
+    background-color: var(--header_top-container);
+}
+
+.debug #header_top > .container > div {
+    border: 1px black dashed;
+}
+
+.debug #header_bottom {
+    background-color: var(--header_bottom-bg);
+}
+
+.debug #header_bottom > .container {
+    background-color: var(--header_bottom-container);
+    height: var(--height-tmp);
+    border: 1px black dashed;
+}
+
+.debug #section_1, #section_3 {
+    background-color: var(--section-white-bg);
+}
+
+.debug #section_2, #section_4 {
+    background-color: var(--section-grey-bg);
+}
+
+.debug .big_container {
+    background-color: var(--section-big-container);
+    height: var(--height-tmp);
+    border: 1px black dashed;
+}
+
+.debug .small_container {
+    background-color: var(--section-small-container);
+    height: var(--height-tmp);
+    border: 1px black dashed;
+}
+
+.debug #section_4 > .container {
+    background-color: var(--section-only-container);
+    height: var(--height-tmp);
+}
+
+.debug #app-footer {
+    background-color: var(--footer-bg);
+}
+
+.debug #footer_top .col-4 {
+    background-color: var(--footer_top-col_4-container);
+    height: var(--height-tmp);
+    border: 1px white dashed;
+}
+
+.debug #footer_top .col-2 {
+    background-color: var(--footer_top-col_2-container);
+    height: var(--height-tmp);
+    border: 1px white dashed;
+}
+
+.debug #footer_bottom > .container {
+    background-color: var(--footer_bottom-container);
+    height: var(--height-tmp / 3);
+}
+
+.debug #footer_bottom > .container > div {
+    background-color: var(--footer_bottom-element);
+    border: 1px black dashed;
+}
+
+/* #endregion Debug */
+
+/* #region Utilities */
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.logo {
+    background-image: url("https://picsum.photos/200/30");
+    height: var(--logo-height);
+    width: var(--logo-width);
+    background-size: cover;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* #region Bootstrap */
+
+.py-05 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pt-05 {
+    padding-top: 0.5rem;
+}
+
+.py-2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.pb-2 {
+    padding-bottom: 2rem;
+}
+
+.my-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.mx-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.p-02 {
+    padding: 0.2rem;
+}
+
+.col-8 {
+    width: calc((100% / 12) * 8);
+}
+
+.col-9 {
+    width: calc((100% / 12) * 9);
+}
+
+.col-4 {
+    width: calc((100% / 12) * 4);
+}
+
+.col-3 {
+    width: calc((100% / 12) * 3);
+}
+
+.col-2 {
+    width: calc((100% / 12) * 2);
+}
+
+/* #endregion Bootstrap */
+
+/* #endregion Utilities */
+
+/* #region app-header */
+
+#header_top .links {
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#header_bottom > .container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+#header_bottom #open_in_browser {
+    background-color: #24242c;
+    color: white;
+}
+
+#header_bottom p {
+    color: white;
+}
+
+#header_bottom h1 {
+    color: white;
+}
+
+/* #endregion app-header */
+
+/* #region app-main */
+#section_4 > .container {
+    text-align: center;
+}
+
+/* #endregion app-main */
+
+/* #region app-footer */
+#footer_bottom > .container {
+    justify-content: space-between;
+}
+
+button#sign_in {
+    background-color: var(--btn-sign_in-bg);
+    color: white;
+}
+
+/* #endregion app-footer */
