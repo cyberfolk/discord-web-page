@@ -402,6 +402,10 @@ img {
     align-items: flex-start;
 }
 
+#footer_bottom > .container {
+    justify-content: space-between;
+}
+
 button#sign_in {
     background-color: var(--btn-sign_in-bg);
     color: white;
