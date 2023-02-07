@@ -11,7 +11,7 @@
     --header_bottom-bg: #00008B;
     --header_bottom-container: #EE82EE;
     --section-white-bg: #FFFFFF;
-    --section-grey-bg: #D3D3D3;
+    --section-grey-bg: #F6F6F6;
     --section-big-container: #1E90FF;
     --section-small-container: #FFC0CB;
     --section-only-container: #228B22;
@@ -49,7 +49,7 @@ h1 {
 
 h2 {
     font-size: 2.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.3rem;
 }
 
 h3 {
@@ -63,7 +63,8 @@ li {
 }
 
 p {
-    line-height: 1.5rem;
+    line-height: 1.3rem;
+    font-size: 0.9rem;
 }
 
 img {
@@ -95,7 +96,6 @@ img {
     border: 1px black dashed;
 }
 
-*/
 .debug #section_1, #section_3 {
     background-color: var(--section-white-bg);
 }
@@ -106,20 +106,21 @@ img {
 
 .debug .big_container {
     background-color: var(--section-big-container);
-    /* height: var(--height-tmp); */
+    height: var(--height-tmp);
     border: 1px black dashed;
 }
 
 .debug .small_container {
     background-color: var(--section-small-container);
-    /* height: var(--height-tmp); */
+    height: var(--height-tmp);
     border: 1px black dashed;
 }
 
 .debug #section_4 > .container {
     background-color: var(--section-only-container);
-    /* height: var(--height-tmp); */
+    height: var(--height-tmp);
 }
+*/
 
 .debug #app-footer {
     background-color: var(--footer-bg);
@@ -195,6 +196,10 @@ img {
 }
 
 /* #region Bootstrap */
+.px-3 {
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
 
 .py-05 {
     padding-top: 0.5rem;
@@ -345,6 +350,10 @@ img {
     font-size: 1rem;
     border-radius: 2.2rem;
     margin: 0 0.5rem;
+}
+
+#section_2, #section_4 {
+    background-color: var(--section-grey-bg);
 }
 
 /* #endregion app-header */
