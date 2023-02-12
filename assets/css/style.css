@@ -21,6 +21,7 @@
     --footer_bottom-container: #7FFFD4;
     --footer_bottom-element: #FFB6C1;
     --height-tmp: 600px;
+    --jumbotron-height: 450px;
     --logo-width: 190px;
     --logo-height: 30px;
     --btn-login-bg: #FFFFFF;
@@ -90,11 +91,11 @@ img {
     border: 1px black dashed;
 }
 
-.debug #section_0 {
+.debug .jumbotron {
     background-color: var(--header_bottom-bg);
 }
 
-.debug #section_0 > .container {
+.debug .jumbotron > .container {
     background-color: var(--header_bottom-container);
     height: var(--height-tmp);
     border: 1px black dashed;
@@ -320,28 +321,31 @@ img {
 
 /* #region app-main */
 
-#section_0 {
+.jumbotron {
     background-image: url("../img/jumbo.png");
-    background-size: cover;
+    height: var(--jumbotron-height);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-#section_0 > .container {
+.jumbotron > .container {
     max-width: 600px;
     margin: auto;
     text-align: center;
 }
 
-#section_0 #btn_open_in_browser {
+.jumbotron #btn_open_in_browser {
     background-color: #24242c;
     color: white;
 }
 
-#section_0 p,
-#section_0 h1 {
+.jumbotron p,
+.jumbotron h1 {
     color: white;
 }
 
-#section_0 button {
+.jumbotron button {
     font-size: 1rem;
     border-radius: 2.2rem;
     margin: 0 0.5rem;
