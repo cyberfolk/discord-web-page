@@ -17,6 +17,7 @@
     --footer_top-col_2-container: #20B2AA;
     --footer_bottom-container: #7FFFD4;
     --footer_bottom-element: #FFB6C1;
+    --app-header-height: 50px;
     --height-tmp: 600px;
     --jumbotron-height: 450px;
     --logo-width: 190px;
@@ -155,7 +156,6 @@ img {
 /* #endregion Debug */
 
 /* #region Utilities */
-
 
 .wc-grey {
     background: var(--ds-lighter);
@@ -298,11 +298,17 @@ img {
 /* #region app-header */
 
 #app-header {
+    height: var(--app-header-height);
     background-color: var(--app-header-bg);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 #app-header .container {
     align-items: center;
+    height: 100%;
 }
 
 #app-header .links {
@@ -319,6 +325,10 @@ img {
 /* #endregion app-header */
 
 /* #region app-main */
+
+#app-main {
+    margin-top: var(--app-header-height);
+}
 
 .jumbotron {
     background-image: url("../img/jumbo.png");
