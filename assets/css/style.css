@@ -10,12 +10,9 @@
     --header_top-container: #DAA520;
     --header_bottom-bg: #00008B;
     --header_bottom-container: #EE82EE;
-    --section-white-bg: #FFFFFF;
-    --section-grey-bg: #F6F6F6;
     --section-big-container: #1E90FF;
     --section-small-container: #FFC0CB;
     --section-only-container: #228B22;
-    --app-footer-bg: #23272A;
     --footer_top-col_4-container: #F08080;
     --footer_top-col_2-container: #20B2AA;
     --footer_bottom-container: #7FFFD4;
@@ -24,9 +21,11 @@
     --jumbotron-height: 450px;
     --logo-width: 190px;
     --logo-height: 30px;
-    --btn-login-bg: #FFFFFF;
-    --btn-blue-bg: #7983F5;
     --title-footer: #7188d9;
+    --ds-dark: #22272b;
+    --ds-primary: #8ea0e0;
+    --ds-light: #f7f7f6;
+    --ds-lighter: white;
 }
 
 body {
@@ -102,11 +101,11 @@ img {
 }
 
 .debug #section_1, #section_3 {
-    background-color: var(--section-white-bg);
+    background-color: var(--ds-lighter);
 }
 
 .debug #section_2, #section_4 {
-    background-color: var(--section-grey-bg);
+    background-color: var(--ds-light);
 }
 
 .debug .big_container {
@@ -128,7 +127,7 @@ img {
 
 
 .debug #app-footer {
-    background-color: var(--app-footer-bg);
+    background-color: var(--ds-dark);
 }
 
 .debug #footer_top .col-4 {
@@ -159,13 +158,13 @@ img {
 
 
 .wc-grey {
-    background: var(--section-white-bg);
-    color: var(--section-grey-bg);
+    background: var(--ds-lighter);
+    color: var(--ds-light);
 }
 
 .wc-white {
-    background: var(--section-grey-bg);
-    color: var(--section-white-bg);
+    background: var(--ds-light);
+    color: var(--ds-lighter);
 }
 
 .wave-container > svg {
@@ -335,11 +334,6 @@ img {
     text-align: center;
 }
 
-.jumbotron #btn_open_in_browser {
-    background-color: #24242c;
-    color: white;
-}
-
 .jumbotron p,
 .jumbotron h1 {
     color: white;
@@ -352,25 +346,45 @@ img {
 }
 
 #section_2, #section_4 {
-    background-color: var(--section-grey-bg);
+    background-color: var(--ds-light);
 }
 
 #section_4 > .container {
     text-align: center;
 }
 
-#section_4 .btn_download {
-    color: white;
-    background-color: var(--btn-blue-bg);
-    font-size: 1rem;
+.btn-small {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.9rem;
 }
+
+.btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.btn-light {
+    background-color: var(--ds-light);
+    color: var(--ds-dark)
+}
+
+.btn-dark {
+    background-color: var(--ds-dark);
+    color: var(--ds-lighter)
+}
+
+.btn-primary {
+    background-color: var(--ds-primary);
+    color: var(--ds-lighter);
+}
+
 
 /* #endregion app-main */
 
 /* #region app-footer */
 
 #app-footer {
-    background-color: var(--app-footer-bg);
+    background-color: var(--ds-dark);
 }
 
 #footer_top h3 {
@@ -390,11 +404,6 @@ img {
     border-top: solid 1px var(--title-footer);
     align-items: flex-start;
     justify-content: space-between;
-}
-
-#footer_bottom #btn_sign_in {
-    background-color: var(--btn-blue-bg);
-    color: white;
 }
 
 /* #endregion app-footer */
